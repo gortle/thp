@@ -1,0 +1,21 @@
+﻿body {
+}
+
+#main-navigationbar ul
+{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    text-align: center;
+}
+
+#main-navigationbar li 
+{ 
+    float:left;
+}
+
+#main-navigationbar a
+{ 
+    display:block;
+    width:100px;
+}

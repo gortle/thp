@@ -1,0 +1,39 @@
+﻿@model thp.Models.LocalPasswordModel
+@{
+    ViewBag.Title = "Main";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<header>
+    <h1>@ViewBag.Title</h1>
+</header>
+
+<div id="main-navigationbar">
+    <ul>
+        <li>
+            <p>@Html.ActionLink("Home", "Main", "Main")</p>
+        </li>
+        <li>
+            <p>@Html.ActionLink("Index", "Index", "Main")</p>
+        </li>
+        <li>
+            <p>@Html.ActionLink("Location", "Location", "Main")</p>
+        </li>
+        <li>
+            <p>@Html.ActionLink("Calendar", "Calendar", "Main")</p>
+        </li>
+    </ul>
+
+</div>
+
+<div id="main-content">
+
+    <section>
+        <p> Main content.</p>
+    </section>
+
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
