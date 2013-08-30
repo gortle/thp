@@ -13,5 +13,23 @@ namespace thp.Controllers
             ViewBag.ReturnUrl = returnUrl;
             return View();
         }
+
+        public ActionResult Calendar(string returnUrl)
+        {
+            ViewBag.ReturnUrl = returnUrl;
+            return View();
+        }
+
+        public ActionResult Location(string returnUrl)
+        {
+            ViewBag.ReturnUrl = returnUrl;
+            return View();
+        }
+
+        public ActionResult Services(string returnUrl)
+        {
+            ViewBag.ReturnUrl = returnUrl;
+            return View();
+        }
     }
 }

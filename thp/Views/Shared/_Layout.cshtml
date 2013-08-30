@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>@ViewBag.Title - My ASP.NET MVC Application</title>
+    <title>@ViewBag.Title</title>
+
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <meta name="viewport" content="width=device-width" />
     @Styles.Render("~/Content/css")
@@ -10,10 +11,9 @@
     @Styles.Render("~/Content/themes/base/css")
 </head>
 <body>
-    <div id="userSettings">
-        @Html.Partial("_UserSettings")
-
-    </div>
+    <header>
+        <div><img id="titleImage" src="~/Images/title.png" alt="Tweed Heads Presbyterian Church"></div>
+    </header>
 
     <div id="body">
         @RenderBody()
@@ -27,8 +27,6 @@
                 <li>@Html.ActionLink("API", "Index", "Help", new { area = "HelpPage" }, null)</li>
             </ul>
         </nav> 
-        <p>Learn more about <a href="http://go.microsoft.com/fwlink/?LinkId=273732">Single Page Applications</a></p>
-        <p>&copy; @DateTime.Now.Year - My ASP.NET MVC Application</p>
     </footer>
 
     @Scripts.Render("~/bundles/jquery")

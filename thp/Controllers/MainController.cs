@@ -11,22 +11,7 @@ namespace thp.Controllers
         //
         // GET: /Main/
 
-        public ActionResult Index()
-        {
-            return View();
-        }
-
         public ActionResult Main()
-        {
-            return View();
-        }
-
-        public ActionResult Calendar()
-        {
-            return View();
-        }
-
-        public ActionResult Location()
         {
             return View();
         }
