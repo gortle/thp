@@ -351,6 +351,15 @@
     <Content Include="Views\Home\Location.cshtml" />
     <Content Include="Views\Home\NavigationBar.cshtml" />
     <Content Include="Views\Home\Services.cshtml" />
+    <Content Include="Views\Home\MidWeekChurch.cshtml" />
+    <Content Include="Views\Home\Kingscliff.cshtml" />
+    <Content Include="Views\Home\TweedMorning.cshtml" />
+    <Content Include="Views\Home\TweedAt5.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Activities.cshtml" />
+    <Content Include="Views\Home\Sermons.cshtml" />
+    <Content Include="Views\Home\SmallGroups.cshtml" />
+    <Content Include="Views\Home\Youth.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
