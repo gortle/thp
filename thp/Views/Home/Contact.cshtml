@@ -3,7 +3,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @Html.Partial("NavigationBar")
-
+@Scripts.Render("~/bundles/jquery")
 <div id="main-content">
 
 <h2>Contact</h2>
@@ -28,8 +28,14 @@
                 <img class="ministerImage" src="~/Images/MichaelBoyFamily.png" />
             </div>
             <div class="twoColumnTwo">
-                <span class="description">Michael is going to provide some bio information and a photo.</span>
+                <span class="description">Michael is going to provide some bio information. Fortunately I found a photo of him on the net so I won't have to update that.</span>
             </div>
+        </div>
+        <div class="minister">
+            <div>Or for any technical problems on this site:</div><br />
+            <span class="personalTitle">Site Administrator</span>
+            <span><a class="email" href="mailto:thpchurch@gmail.com?subject=Web Site Contact">thpchurch@gmail.com</a></span>
+
         </div>
     </section>
 

@@ -3,14 +3,34 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @Html.Partial("NavigationBar")
+<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script>
+    function initialize() {
+        var map_canvas = document.getElementById('map_canvas');
+        var latlng = new google.maps.LatLng(-28.236009, 153.559522);
+        var map_options = {
+            center: latlng,
+            zoom: 17,
+            mapTypeId: google.maps.MapTypeId.HYBRID
+        }
+        var map = new google.maps.Map(map_canvas, map_options)
 
+        var marker = new google.maps.Marker({
+            position: latlng,
+            map: map,
+            title: "Chinderah Seventh Day Adventist"
+        });
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+</script>
 <div id="main-content">
 
 <h2>Kingscliff</h2>
 
     <section>
         <article>
-This service may be called Kingscliff morning but we are currently meeting at the Chinderah SDA Centre. Confused? Well we have been meeting in the Kingscliff are for over 100 years so we decided not to rename ourselves when we started meeting at Chinderah a few years ago. I hope that makes sense.
+This service may be called Kingscliff morning but we are currently meeting at the Chinderah Seventh Day Adventist Centre. Confused? Well we have been meeting in the Kingscliff are for over 100 years so we decided not to rename ourselves when we started meeting at Chinderah a few years ago. I hope that makes sense.
 
 Our service on a Sunday morning is probably best described as traditional and friendly. We mainly sing older type hymns but do intersperse that with some modern songs as well. We place at the centre of what we do the preaching and teaching of God’s word and we do so by encouraging one another to practise what we preach. We seek to support and love one another in the same way that God has loved us through Christ. After approximately an hour’s worship, we pack up and have a cuppa tea and something yummy to eat.
 
@@ -19,6 +39,7 @@ The Kingscliff Church is actively involved in our local area mainly through a fr
 So if you are looking for a Church that loves the Lord, the word and our world then come along at 8:30am one Sunday morning and check us out. 
 
         </article>
+        <div id="map_canvas"></div>
     </section>
 
 </div>

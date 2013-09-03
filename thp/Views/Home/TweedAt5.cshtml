@@ -3,6 +3,28 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @Html.Partial("NavigationBar")
+<script src="~/Scripts/jquery-1.8.2.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script>
+    function initialize() {
+        var map_canvas = document.getElementById('map_canvas');
+        var latlng = new google.maps.LatLng(-28.175835, 153.54149);
+        var map_options = {
+            center: latlng,
+            zoom: 17,
+            mapTypeId: google.maps.MapTypeId.HYBRID
+        }
+        var map = new google.maps.Map(map_canvas, map_options)
+
+        var marker = new google.maps.Marker({
+            position: latlng,
+            map: map,
+            title: "Tweed Heads Presbyterian Church"
+        });
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+</script>
 
 <div id="main-content">
 
@@ -10,7 +32,7 @@
 
     <section>
         <article>
-Living on the Tweed we are blessed with beautiful weather and great outdoor activities. But this also means that Sundays get pretty busy for the average family with Church, Nippers, Sport and family times all wanting the same few hours each week. Sunday @ 5 solves that problem by moving our main Family service from the Sunday morning timeslot to late Sunday afternoon. Since we have done this our service has grown about 250% so it seems to be working. On most Sundays we would have around 40 adults and 20 kids.
+Living on the Tweed we are blessed with beautiful weather and great outdoor activities. But this also means that Sundays get pretty busy for the average family with Church, Nippers, Sport and family times all wanting the same few hours each week. Sunday @@ 5 solves that problem by moving our main Family service from the Sunday morning timeslot to late Sunday afternoon. Since we have done this our service has grown about 250% so it seems to be working. On most Sundays we would have around 40 adults and 20 kids.
 
 It starts at 3:30 for our youth group kids (Years 5-10) who meet at the Church hall for an activity followed by some food. This term they are having a massive Pac Man night, girls vs boys netball, lame games, aboriginal artwork etc so they will really enjoy themselves. 
 
@@ -21,6 +43,7 @@ As well as having a Church service this service is also responsible for a weekly
 So if you are wanting a Church that caters for both you and your family, then why not try Sunday @@ 5?
 
         </article>
+        <div id="map_canvas"></div>
     </section>
 
 </div>

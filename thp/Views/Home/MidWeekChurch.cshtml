@@ -3,14 +3,34 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @Html.Partial("NavigationBar")
+<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script>
+    function initialize() {
+        var map_canvas = document.getElementById('map_canvas');
+        var latlng = new google.maps.LatLng(-28.240447, 153.499764);
+        var map_options = {
+            center: latlng,
+            zoom: 17,
+            mapTypeId: google.maps.MapTypeId.HYBRID
+        }
+        var map = new google.maps.Map(map_canvas, map_options)
 
+        var marker = new google.maps.Marker({
+            position: latlng,
+            map: map,
+            title: "Tweed Heads Presbyterian Church"
+        });
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+</script>
 <div id="main-content">
 
 <h2> midweekchurch</h2>
 
     <section>
         <article>
-            worship that is Biblical, contemporary and family oriented – especially for those who haven’t been to Church for a while. This service includes a free meal each Wednesday @ 5:30pm and has a full range of youth and kids programmes.
+            Worship that is Biblical, contemporary and family oriented – especially for those who haven’t been to Church for a while. This service includes a free meal each Wednesday @@ 5:30pm and has a full range of youth and kids programmes.
 	Every Wednesday 6:00 – 7:15pm 
 @@ Terranora Primary School Hall, 
 Terranora Rd, Terranora.
@@ -26,6 +46,7 @@ As well as having a Church service this group of Christians are also responsible
 So you might have soccer training on Tuesday and Scouts on Friday so why not add midweekchurch on Wednesday. Come along and check us out, you will be glad you made the effort. 
 
         </article>
+        <div id="map_canvas"></div>
     </section>
 
 </div>

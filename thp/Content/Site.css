@@ -73,6 +73,9 @@ ol.round {
     min-height: 100px;
     text-align: left;
     display: block;
+  text-decoration: inherit;
+  font-style: inherit;
+  color: inherit;
 }
 
 .twoColumnOne {
@@ -109,6 +112,11 @@ ol.round {
 .ministerImage {
     text-align: left;
     display: inline;
+}
+
+#map_canvas {
+width: 500px;
+height: 400px;
 }
 
 /*#region info and errors */

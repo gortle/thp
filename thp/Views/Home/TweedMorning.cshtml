@@ -3,7 +3,27 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @Html.Partial("NavigationBar")
+<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script>
+    function initialize() {
+        var map_canvas = document.getElementById('map_canvas');
+        var latlng = new google.maps.LatLng(-28.175835, 153.54149);
+        var map_options = {
+            center: latlng,
+            zoom: 17,
+            mapTypeId: google.maps.MapTypeId.HYBRID
+        }
+        var map = new google.maps.Map(map_canvas, map_options)
 
+        var marker = new google.maps.Marker({
+            position: latlng,
+            map: map,
+            title: "Tweed Heads Presbyterian Church"
+        });
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+</script>
 <div id="main-content">
 
 <h2>Tweed Morning Service</h2>
@@ -19,6 +39,7 @@ This service has for most of the church’s history been the backbone of the min
 We are trying to make this the best service for the people of the Tweed and we feel it currently reaches a significant portion of our people. Why not come along and see if this is the service that fits where you currently are?
 
         </article>
+        <div id="map_canvas"></div>
     </section>
 
 </div>
