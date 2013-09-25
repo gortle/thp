@@ -8,7 +8,7 @@
     {
         string cookieToken, formToken;
         AntiForgery.GetTokens(null, out cookieToken, out formToken);
-        return cookieToken + ":" + formToken;                
+        return cookieToken + ":" + formToken;
     }
 }
 @Html.Partial("NavigationBar")
@@ -17,26 +17,10 @@
     <h2>Welcome</h2>
 
     <section>
-        <a class="service" href="/Home/midweekchurch">
-            <span class="serviceTitle">midweekchurch </span>
-            <span class="serviceTime">Wed 6 – 7:15pm </span>
-            <div class="serviceLocation">Terranora Primary School Hall, Terranora Rd </div>
+        <a class="service" href="/Home/Services">
+            <img src="~/Images/WebUnderConstruction.png" />
         </a>
-        <a class="service" href="/Home/Kingscliff">
-            <span class="serviceTitle">Kingscliff </span>
-            <span class="serviceTime">Sun 8:30am </span>
-            <div class="serviceLocation">Chinderah SDA Centre, Philip St </div>
-        </a>
-        <a class="service" href="/Home/TweedMorning">
-            <span class="serviceTitle">Tweed Morning Service </span>
-            <span class="serviceTime">Sun 10am </span>
-            <div class="serviceLocation">Cnr Wharf & Florence Sts, Tweed Heads </div>
-        </a>
-        <a class="service" href="/Home/TweedAt5">
-            <span class="serviceTitle">Sunday @@ 5</span>
-            <span class="serviceTime">Sun 5pm </span>
-            <div class="serviceLocation">Cnr Wharf & Florence Sts, Tweed Heads </div>
-        </a>
+
     </section>
 
 </div>
