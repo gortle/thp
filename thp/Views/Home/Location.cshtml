@@ -4,13 +4,36 @@
 }
 @Html.Partial("NavigationBar")
 
+<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script>
+    function initialize() {
+        var map_canvas = document.getElementById('map_canvas');
+        var latlng = new google.maps.LatLng(-28.175835, 153.54149);
+        var map_options = {
+            center: latlng,
+            zoom: 17,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(map_canvas, map_options)
+
+        var marker = new google.maps.Marker({
+            position: latlng,
+            map: map,
+            title: "Tweed Heads Presbyterian Church"
+        });
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+</script>
 <div id="main-content">
-    <h2>Location</h2>
+
+<h2>Location</h2>
 
     <section>
         <article>
-            test content
+            We have services at <a href="/Home/TweedMorning">Tweed Heads</a>, <a href="/Home/midweekchurch">Terranora</a> and <a href="/Home/Kingscliff">Kingscliff</a>. Our church Offices are located here at Tweed Heads.
         </article>
+        <div id="map_canvas"></div>
     </section>
 
 </div>

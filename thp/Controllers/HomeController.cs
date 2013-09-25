@@ -85,5 +85,11 @@ namespace thp.Controllers
             ViewBag.ReturnUrl = returnUrl;
             return View();
         }
+
+        public ActionResult SiteMap(string returnUrl)
+        {
+            ViewBag.ReturnUrl = returnUrl;
+            return View();
+        }
     }
 }

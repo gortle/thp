@@ -1,0 +1,68 @@
+﻿@{
+    ViewBag.Title = "Site Map";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Html.Partial("NavigationBar")
+
+<script>
+    $(function () {
+        $('.service').click(function () {
+            console.log('click');
+        });
+    });
+</script>
+
+<div id="main-content">
+    <h2>Site Map</h2>
+
+    <section>
+        <ul>
+            <li>
+                <p>@Html.ActionLink("Home", "Index", "Home")</p>
+            </li>
+            <li>
+                <p>@Html.ActionLink("Services", "Services", "Home")</p>
+                <ul>
+                    <li>
+                        <p>@Html.ActionLink("mid week church", "MidWeekChurch", "Home")</p>
+                    </li>
+                    <li>
+                        <p>@Html.ActionLink("Kingscliff", "Kingscliff", "Home")</p>
+                    </li>
+                    <li>
+                        <p>@Html.ActionLink("Tweed Morning Service", "TweedMorning", "Home")</p>
+                    </li>
+                    <li>
+                        <p>@Html.ActionLink("Tweed @ 5", "TweedAt5", "Home")</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>@Html.ActionLink("Location", "Location", "Home")</p>
+            </li>
+            <li>
+                <p>@Html.ActionLink("Activities", "Activities", "Home")</p>
+            </li>
+            <li>
+                <p>@Html.ActionLink("Sermons", "Sermons", "Home")</p>
+            </li>
+            <li>
+                <p>@Html.ActionLink("Small Groups", "SmallGroups", "Home")</p>
+            </li>
+            <li>
+                <p>@Html.ActionLink("Youth", "Youth", "Home")</p>
+            </li>
+            <li>
+                <p>@Html.ActionLink("Calendar", "Calendar", "Home")</p>
+            </li>
+            <li>
+                <p>@Html.ActionLink("Contact Us", "Contact", "Home")</p>
+            </li>
+            <li>
+                <p>@Html.ActionLink("Site Map", "SiteMap", "Home")</p>
+            </li>
+        </ul>
+    </section>
+
+</div>
+
