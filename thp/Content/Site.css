@@ -113,6 +113,9 @@ ol.round {
     text-align: left;
     display: inline;
 }
+.folder-overlay-header {
+    display:none;
+}
 
 #map_canvas {
 width: 500px;
