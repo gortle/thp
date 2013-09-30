@@ -82,6 +82,6 @@ C:\Users\Chris\documents\visual studio 2012\Projects\thp\thp\bin\ko\System.Spati
 C:\Users\Chris\documents\visual studio 2012\Projects\thp\thp\bin\ru\System.Spatial.resources.dll
 C:\Users\Chris\documents\visual studio 2012\Projects\thp\thp\bin\zh-Hans\System.Spatial.resources.dll
 C:\Users\Chris\documents\visual studio 2012\Projects\thp\thp\bin\zh-Hant\System.Spatial.resources.dll
-C:\Users\Chris\documents\visual studio 2012\Projects\thp\thp\obj\Debug\thp.csprojResolveAssemblyReference.cache
 C:\Users\Chris\documents\visual studio 2012\Projects\thp\thp\obj\Debug\thp.dll
 C:\Users\Chris\documents\visual studio 2012\Projects\thp\thp\obj\Debug\thp.pdb
+C:\Users\Chris\documents\visual studio 2012\Projects\thp\thp\obj\Debug\thp.csprojResolveAssemblyReference.cache

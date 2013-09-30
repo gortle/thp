@@ -32,6 +32,8 @@ header {
     z-index: -1;
 }
 
+
+
     header p {
         font-size: 2.5em;
         margin: 0;
@@ -46,9 +48,9 @@ header {
         display: inline;
     }
 
-    #menu li:not(:first-child) {
-        margin-left: .8em;
-    }
+        #menu li:not(:first-child) {
+            margin-left: .8em;
+        }
 
 /*#endregion */
 
@@ -66,35 +68,101 @@ ol.round {
     text-align: left;
     display: block;
     clear: left;
-    margin:0px auto; 
-    width:80%;
+    margin: 0px auto;
 }
+
+.bigInner {
+    padding: 15px;
+}
+
+.inner {
+    padding: 5px;
+}
+
+.headerLink {
+    display: block;
+}
+
 .service {
     min-height: 100px;
-    text-align: left;
+    width: 50%;
+    margin: 10px;
+    text-align: center;
     display: block;
-  text-decoration: inherit;
-  font-style: inherit;
-  color: inherit;
+    text-decoration: inherit;
+    font-style: inherit;
+    background-color: PaleTurquoise;
+    color: white;
+}
+
+.mainLink {
+    min-height: 150px;
+    width: 88%;
+    margin: 5px;
+    text-align: center;
+    font-size: xx-large;
+    display: block;
+    text-decoration: inherit;
+    font-style: inherit;
+    background-color: PeachPuff;
+    color: white;
+}
+
+.serviceShort {
+    min-height: 70px;
+    width: 20%;
+    margin: 10px;
+    text-align: center;
+    display: block;
+    text-decoration: inherit;
+    font-style: inherit;
+    font-size: larger;
+    background-color: PowderBlue;
+    color: white;
+}
+
+.serviceTitle {
+    color: inherit;
+}
+
+.serviceTime {
+    font: verdana;
+    color: inherit;
+}
+
+.serviceLocation {
+    font: bold;
+    color: inherit;
 }
 
 .twoColumnOne {
-    float:left; 
-    margin:0;
-    width:50%;
+    float: left;
+    margin: 5px;
+    width: 45%;
 }
 
 .twoColumnTwo {
-    float:left; 
-    margin:0;
-    width:50%;
+    float: left;
+    margin: 5px;
+    width: 45%;
 }
 
 .minister {
-    min-height: 300px;
+    min-height: 370px;
     text-align: left;
     display: block;
     clear: left;
+    background-color: RosyBrown;
+    color: white;
+}
+
+.notMinister {
+    min-height: 70px;
+    text-align: left;
+    display: block;
+    clear: left;
+    background-color: RosyBrown;
+    color: white;
 }
 
 .ministerImage {
@@ -103,23 +171,20 @@ ol.round {
 }
 
 .phone {
-    float:right;
-}
-.email {
-    float:right;
+    float: right;
 }
 
-.ministerImage {
-    text-align: left;
-    display: inline;
+.email {
+    float: right;
 }
+
 .folder-overlay-header {
-    display:none;
+    display: none;
 }
 
 #map_canvas {
-width: 500px;
-height: 400px;
+    width: 500px;
+    height: 400px;
 }
 
 /*#region info and errors */
@@ -137,10 +202,10 @@ height: 400px;
     font-size: .8em;
 }
 
-.validation-summary-errors ul{
-    padding: 0 !important;
-    margin: 0 !important;
-}
+    .validation-summary-errors ul {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
 
 /*#endregion */
 

@@ -14,6 +14,12 @@ namespace thp.Controllers
             return View();
         }
 
+        public ActionResult Jesus(string returnUrl)
+        {
+            ViewBag.ReturnUrl = returnUrl;
+            return View();
+        }
+
         public ActionResult Calendar(string returnUrl)
         {
             ViewBag.ReturnUrl = returnUrl;
@@ -81,6 +87,12 @@ namespace thp.Controllers
         }
 
         public ActionResult Sermons(string returnUrl)
+        {
+            ViewBag.ReturnUrl = returnUrl;
+            return View();
+        }
+
+        public ActionResult Links(string returnUrl)
         {
             ViewBag.ReturnUrl = returnUrl;
             return View();

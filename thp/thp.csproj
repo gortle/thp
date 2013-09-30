@@ -367,6 +367,8 @@
     <Content Include="Views\Home\SmallGroups.cshtml" />
     <Content Include="Views\Home\Youth.cshtml" />
     <Content Include="Views\Home\SiteMap.cshtml" />
+    <Content Include="Views\Home\Links.cshtml" />
+    <Content Include="Views\Home\Jesus.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
