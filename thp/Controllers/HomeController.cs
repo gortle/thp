@@ -92,6 +92,12 @@ namespace thp.Controllers
             return View();
         }
 
+        public ActionResult NewsLetters(string returnUrl)
+        {
+            ViewBag.ReturnUrl = returnUrl;
+            return View();
+        }
+
         public ActionResult Links(string returnUrl)
         {
             ViewBag.ReturnUrl = returnUrl;
