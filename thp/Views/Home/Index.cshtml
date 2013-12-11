@@ -14,9 +14,20 @@
 @Html.Partial("NavigationBar")
 
 <div id="main-content">
-
+    <img id="titleImage" src="~/Images/midweek service.jpg" alt="Mid Week Church">
     <section>
-        <a class="mainLink bigInner" href="/Home/Jesus">Why you need Jesus</a>
+        <article>
+            <h3>Why Tweed Presbyterian Church?</h3>
+            <p>The Tweed Heads Presbyterian Church is actually four congregations that each try and reach a different group of people and so are in some ways independently run. </p>
+            <p>But they are able to pool their resources together and so create synergies in order that they might support one another. In this way we hope to reach all ages and all types of lifestyles for Jesus but still are able to so in a way that meets everyone’s different unique needs. </p>
+            <p>So how it works is that… </p>
+            <ul>
+                <li><a href="/Home/Kingscliff">Kingscliff Church</a> is attempting to reach people on the lower Tweed Coast using a traditional service.</li>
+                <li><a href="/Home/TweedMorning">Tweed AM</a> is likewise using a traditional service to reach retirees in the Tweed/Coolangatta region.</li>
+                <li><a href="/Home/TweedAt5">Tweed PM</a> runs a family service primarily aimed at families with children, older teenagers and university students.</li>
+                <li><a href="/Home/midweekchurch">midweekchurch</a> seeks to reach people who haven’t been at Church for a while with an informal, family friendly Church service.</li>
+            </ul>
+        </article>
     </section>
     <section>
         <a class="serviceShort twoColumnOne  bigInner" href="/Home/midweekchurch">
@@ -32,7 +43,10 @@
             <span class="serviceTitle">Sunday @@ 5</span>
         </a>
     </section>
-
+    <div style="clear: left;"></div>
+    <section>
+        <a class="mainLink bigInner" href="/Home/Jesus">Why you need Jesus</a>
+    </section>
 </div>
 
 @section scripts {

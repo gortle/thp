@@ -2,7 +2,7 @@
 body {
     background-color: #f5f5f5;
     color: #333;
-    max-width: 980px; /*Remove this to make it full screen*/
+    max-width: 900px; /*Remove this to make it full screen*/
     margin: 1em auto;
 }
 
@@ -101,9 +101,9 @@ button, input[type=submit] {
 }
 
 .mainLink {
-    min-height: 150px;
-    width: 96%;
-    margin: 5px;
+    min-height: 120px;
+    width: 92%;
+    margin: 10px;
     text-align: center;
     font-size: xx-large;
     display: block;
@@ -111,10 +111,11 @@ button, input[type=submit] {
     font-style: inherit;
     background-color: ForestGreen;
     color: white;
+    clear: left;
 }
 
 .serviceShort {
-    min-height: 70px;
+    min-height: 60px;
     width: 25%;
     margin: 10px;
     text-align: center;
@@ -186,6 +187,10 @@ button, input[type=submit] {
 
 .folder-overlay-header {
     display: none;
+}
+
+.highlightTable {
+    color: green;
 }
 
 #map_canvas {

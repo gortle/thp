@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.Mvc;
 
@@ -108,6 +110,27 @@ namespace thp.Controllers
         {
             ViewBag.ReturnUrl = returnUrl;
             return View();
+        }
+
+        public ActionResult DownloadPdf(string filename)
+        {
+            Regex rgx = new Regex("[^a-zA-Z0-9 -]");
+            filename = rgx.Replace(filename, "") + ".pdf";
+            string filePath = "~/Files/" + filename;
+            return File(filePath, "Application/pdf", filename);
+        }
+
+        public ActionResult ViewPdf(string filename)
+        {
+            Regex rgx = new Regex("[^a-zA-Z0-9 -]");
+            filename = rgx.Replace(filename, "") + ".pdf";
+            var cd = new System.Net.Mime.ContentDisposition
+            {
+                Inline = true,
+                FileName = filename
+            };
+            Response.AddHeader("Content-Disposition", cd.ToString());
+            return File("~/Files/" + filename, "Application/pdf");
         }
     }
 }

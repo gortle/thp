@@ -289,9 +289,15 @@
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
     <None Include="Properties\PublishProfiles\thp-test - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\thp-test - Web Deploy.pubxml" />
+    <Content Include="Files\Brochure AM 2013.pdf" />
+    <Content Include="Files\Brochure PM 2013.pdf" />
+    <Content Include="Files\Kingscliff Brochure 2013.pdf" />
+    <Content Include="Files\midweek Brochure 2013.pdf" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Images\MichaelBioPic.png" />
+    <Content Include="Images\midweek service.jpg" />
     <Content Include="Images\StephenTaylorFamily.png" />
+    <Content Include="Images\StephenTaylorFamily2.png" />
     <Content Include="Images\time2bed_left-ON.gif" />
     <Content Include="Images\time2bed_right-ON.gif" />
     <Content Include="Images\time4bed_bg.gif" />
