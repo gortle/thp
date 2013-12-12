@@ -49,7 +49,7 @@ button, input[type=submit] {
 	padding:0;
 	margin:0;
 	list-style-type:none;
-	height:30px;
+	height:33px;
 }
 .dropMenu li { float:left; }
 .dropMenu li a {
@@ -57,7 +57,7 @@ button, input[type=submit] {
 	display:block;
 	color:#fff;
 	text-decoration:none;
-	font:12px arial, verdana, sans-serif;
+	font:14px arial, verdana, sans-serif;
 }
 
 /* Submenu */
@@ -76,7 +76,7 @@ button, input[type=submit] {
 }
 
 .dropMenu li:hover ul li a {
-	padding:5px;
+	padding:8px;
 	display:block;
 	width:168px;
 	text-indent:15px;
