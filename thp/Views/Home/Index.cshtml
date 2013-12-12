@@ -12,34 +12,39 @@
     }
 }
 @Html.Partial("NavigationBar")
-
+<script>
+    function toggleText() {
+        $("#mainText").toggle(200);
+        $("#mainLinks").toggle(200);
+    }
+</script>
 <div id="main-content">
-    <img id="titleImage" src="~/Images/midweek service.jpg" alt="Mid Week Church">
-    <section>
+    <img id="titleImage" src="~/Images/midweek service.jpg" alt="Mid Week Church" onclick="toggleText();">
+    <section id ="mainText" style="display:none">
         <article>
             <h3>Why Tweed Presbyterian Church?</h3>
             <p>The Tweed Heads Presbyterian Church is actually four congregations that each try and reach a different group of people and so are in some ways independently run. </p>
             <p>But they are able to pool their resources together and so create synergies in order that they might support one another. In this way we hope to reach all ages and all types of lifestyles for Jesus but still are able to so in a way that meets everyone’s different unique needs. </p>
             <p>So how it works is that… </p>
             <ul>
-                <li><a href="/Home/Kingscliff">Kingscliff Church</a> is attempting to reach people on the lower Tweed Coast using a traditional service.</li>
-                <li><a href="/Home/TweedMorning">Tweed AM</a> is likewise using a traditional service to reach retirees in the Tweed/Coolangatta region.</li>
-                <li><a href="/Home/TweedAt5">Tweed PM</a> runs a family service primarily aimed at families with children, older teenagers and university students.</li>
+                <li><a href="/Home/Kingscliff">Kingscliff</a> church is attempting to reach people on the lower Tweed Coast using a traditional service.</li>
+                <li><a href="/Home/TweedMorning">Tweed Morning Service</a> is likewise using a traditional service to reach retirees in the Tweed/Coolangatta region.</li>
+                <li><a href="/Home/TweedAt5">Sunday @@ 5</a> runs a family service primarily aimed at families with children, older teenagers and university students.</li>
                 <li><a href="/Home/midweekchurch">midweekchurch</a> seeks to reach people who haven’t been at Church for a while with an informal, family friendly Church service.</li>
             </ul>
         </article>
     </section>
-    <section>
-        <a class="serviceShort twoColumnOne  bigInner" href="/Home/midweekchurch">
-            <span class="serviceTitle">midweekchurch </span>
+    <section id ="mainLinks">
+        <a class="serviceShort twoColumnOne  bigInner" href="/Home/midweekchurch" title="midweekchurch seeks to reach people who haven’t been at Church for a while with an informal, family friendly Church service">
+            <span class="serviceTitle" >midweekchurch </span>
         </a>
-        <a class="serviceShort twoColumnOne bigInner" href="/Home/Kingscliff">
-            <span class="serviceTitle">Kingscliff </span>
+        <a class="serviceShort twoColumnOne bigInner" href="/Home/Kingscliff" title="Kingscliff Church is attempting to reach people on the lower Tweed Coast using a traditional service">
+            <span class="serviceTitle" >Kingscliff </span>
         </a>
-        <a class="serviceShort twoColumnTwo bigInner" href="/Home/TweedMorning">
+        <a class="serviceShort twoColumnTwo bigInner" href="/Home/TweedMorning" title="Tweed Morning is likewise using a traditional service to reach retirees in the Tweed/Coolangatta region">
             <span class="serviceTitle">Tweed Morning Service </span>
         </a>
-        <a class="serviceShort twoColumnTwo bigInner" href="/Home/TweedAt5">
+        <a class="serviceShort twoColumnTwo bigInner" href="/Home/TweedAt5" title="Sunday at 5 runs a family service primarily aimed at families with children, older teenagers and university students">
             <span class="serviceTitle">Sunday @@ 5</span>
         </a>
     </section>
