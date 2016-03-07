@@ -1,0 +1,196 @@
+Delivered-To: thpchurch@gmail.com
+Received: by 10.58.217.195 with SMTP id pa3csp353066vec;
+        Wed, 25 Sep 2013 06:54:40 -0700 (PDT)
+X-Received: by 10.68.179.65 with SMTP id de1mr23456168pbc.73.1380117280201;
+        Wed, 25 Sep 2013 06:54:40 -0700 (PDT)
+Return-Path: <chrishudson777@gmail.com>
+Received: from mail-pa0-x242.google.com (mail-pa0-x242.google.com [2607:f8b0:400e:c03::242])
+        by mx.google.com with ESMTPS id rt3si7986322pbc.233.1969.12.31.16.00.00
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Wed, 25 Sep 2013 06:54:40 -0700 (PDT)
+Received-SPF: pass (google.com: domain of chrishudson777@gmail.com designates 2607:f8b0:400e:c03::242 as permitted sender) client-ip=2607:f8b0:400e:c03::242;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of chrishudson777@gmail.com designates 2607:f8b0:400e:c03::242 as permitted sender) smtp.mail=chrishudson777@gmail.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-pa0-x242.google.com with SMTP id kq14so1955807pab.9
+        for <multiple recipients>; Wed, 25 Sep 2013 06:54:38 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=message-id:date:from:reply-to:user-agent:mime-version:to:cc:subject
+         :content-type;
+        bh=wvvh9GaqwOG2LacDKK81WoihIuf28nzRhfo19s9oW0w=;
+        b=iCM7kflZMXP7wvaRXyv4WDnIac/XJ9JqOIjkPd+UitVUMniex5uwHCg6bR4eCV+t4l
+         ULYZ4A67mVOebqc+th9yvyxRb5+6FlkUWITG+vWXr+23Ih8ZwX2cJsgabqvzpqaYMtSy
+         8nmIVGoip7/19ZVWZinMuQ9KdN8m+PZe0j8vCswWzDXLxDN6tDlaKSDvu2BcvZs+B07I
+         temfO/xiQKpimmbHWJCFrUAKeanhKHS1sh13pnFRrqnf0uU8bL05Qbx+iSrNKuckCwVp
+         x7coGmQMNU0lLNYFg7bADOvQE+N5VklOeTs4/MfAaOxYyu/DyhvFPvMaDY1CFaVu23/7
+         9j7Q==
+X-Received: by 10.68.238.104 with SMTP id vj8mr12165780pbc.149.1380117278735;
+        Wed, 25 Sep 2013 06:54:38 -0700 (PDT)
+Return-Path: <chrishudson777@gmail.com>
+Received: from [10.0.0.35] (CPE-123-211-62-39.lnse3.cha.bigpond.net.au. [123.211.62.39])
+        by mx.google.com with ESMTPSA id f2sm47798648pbg.44.1969.12.31.16.00.00
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Wed, 25 Sep 2013 06:54:37 -0700 (PDT)
+Message-ID: <5242EB1D.1060908@gmail.com>
+Date: Wed, 25 Sep 2013 23:54:37 +1000
+From: Chris Hudson <chrishudson777@gmail.com>
+Reply-To: chrishudson777@gmail.com
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:17.0) Gecko/20130801 Thunderbird/17.0.8
+MIME-Version: 1.0
+To: sktaylor1997@gmail.com
+CC: Michael Boyd <mikeboyd@iinet.net.au>, 
+ Ben Young <kingyoungy@gmail.com>,
+ thpchurch@gmail.com
+Subject: Church Web Site - Progress Report
+Content-Type: multipart/alternative;
+ boundary="------------080807030403080408010109"
+
+This is a multi-part message in MIME format.
+--------------080807030403080408010109
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 7bit
+
+Hi Stephen,
+
+I have been slowly working on the website. There is no styling on it, I 
+haven't even split up paragraphs of text, but the main pieces of the 
+site are here.  It is not ready for viewing by the general public but 
+anyone can see it here:
+
+    http://thp-test.azurewebsites.net/
+
+
+The navigation is a little clunky. To see all of it you will need to go 
+to the site map linked on the page or
+
+    http://thp-test.azurewebsites.net/Home/SiteMap
+
+
+I'll get on to the styling next, and uploading sermons. Later I'll need 
+some help with better images, cleaning up the design and revisiting the 
+text of the site. Some of it is clearly out of date.
+
+
+The source code is here and is freely available to anyone. No secrets 
+here. You can even see when I check in.
+
+    https://github.com/gortle/thp
+
+
+You will need Visual Studio 2012 or later to use it easily. If you are 
+keen there are free versions here:
+
+    http://www.microsoft.com/visualstudio/eng/products/visual-studio-express-for-web
+
+
+I have created a church mail account
+
+    thpchurch@gmail.com
+
+Please feel free to use this account or we can create another if need 
+be.  I'll send you the passwords offline as it is more secure.
+
+The calender in the website is tied to this account. You can create 
+events via here or directly from the site
+
+    https://www.google.com/calendar
+
+
+
+At the moment I have it hosted on Microsoft Azure which is no cost until 
+such stage as we need to assign it an external domain (ie 
+www.tweedpresbyterian.com). At which point I think it is $10 per month. 
+The price doesn't go up unless we are getting 10,000 of hits per month - 
+at which point we would be very happy. I may be able to host it under 
+the existing arrangements Glen has made, but I haven't followed that up. 
+The site security is going to be much easier if Microsoft handles it. We 
+will need to discuss that later.
+
+    https://manage.windowsazure.com
+
+
+
+
+Regards
+Chris
+
+
+--------------080807030403080408010109
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <head>
+
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+  </head>
+  <body text="#000000" bgcolor="#FFFFFF">
+    Hi Stephen,<br>
+    <br>
+    I have been slowly working on the website. There is no styling on
+    it, I haven't even split up paragraphs of text, but the main pieces
+    of the site are here.&nbsp; It is not ready for viewing by the general
+    public but anyone can see it here:<br>
+    <br>
+    <blockquote><a href="http://thp-test.azurewebsites.net/">http://thp-test.azurewebsites.net/</a><br>
+    </blockquote>
+    <br>
+    The navigation is a little clunky. To see all of it you will need to
+    go to the site map linked on the page or<br>
+    <br>
+    <blockquote><a href="http://thp-test.azurewebsites.net/Home/SiteMap">http://thp-test.azurewebsites.net/Home/SiteMap</a><br>
+    </blockquote>
+    <br>
+    I'll get on to the styling next, and uploading sermons. Later I'll
+    need some help with better images, cleaning up the design and
+    revisiting the text of the site. Some of it is clearly out of date.<br>
+    <br>
+    <br>
+    The source code is here and is freely available to anyone. No
+    secrets here. You can even see when I check in.<br>
+    <br>
+    <blockquote><a href="https://github.com/gortle/thp">https://github.com/gortle/thp</a><br>
+    </blockquote>
+    <br>
+    You will need Visual Studio 2012 or later to use it easily. If you
+    are keen there are free versions here:<br>
+    <br>
+    <blockquote><a
+href="http://www.microsoft.com/visualstudio/eng/products/visual-studio-express-for-web">http://www.microsoft.com/visualstudio/eng/products/visual-studio-express-for-web</a><br>
+    </blockquote>
+    <br>
+    I have created a church mail account <br>
+    <blockquote><a class="moz-txt-link-abbreviated" href="mailto:thpchurch@gmail.com">thpchurch@gmail.com</a>&nbsp;&nbsp; <br>
+    </blockquote>
+    Please feel free to use this account or we can create another if
+    need be.&nbsp; I'll send you the passwords offline as it is more secure.<br>
+    <br>
+    The calender in the website is tied to this account. You can create
+    events via here or directly from the site<br>
+    <blockquote><a href="https://www.google.com/calendar">https://www.google.com/calendar<br>
+      </a></blockquote>
+    <br>
+    <br>
+    At the moment I have it hosted on Microsoft Azure which is no cost
+    until such stage as we need to assign it an external domain (ie
+    <a class="moz-txt-link-abbreviated" href="http://www.tweedpresbyterian.com">www.tweedpresbyterian.com</a>). At which point I think it is $10 per
+    month. The price doesn't go up unless we are getting 10,000 of hits
+    per month - at which point we would be very happy. I may be able to
+    host it under the existing arrangements Glen has made, but I haven't
+    followed that up. The site security is going to be much easier if
+    Microsoft handles it. We will need to discuss that later.<br>
+    <br>
+    <blockquote><a href="https://manage.windowsazure.com">https://manage.windowsazure.com</a><br>
+    </blockquote>
+    <br>
+    <br>
+    <br>
+    Regards<br>
+    Chris<br>
+    <br>
+  </body>
+</html>
+
+--------------080807030403080408010109--
