@@ -198,6 +198,24 @@ button, input[type=submit] {
     width: 43%;
 }
 
+.threeColumnOne {
+    float: left;
+    margin:10px;
+    width: 27%;
+}
+
+.threeColumnTwo {
+    float: left;
+    margin:10px;
+    width: 30%;
+}
+
+.threeColumnThree {
+    float: left;
+    margin:10px;
+    width: 27%;
+}
+
 .minister {
     min-height: 310px;
     text-align: left;

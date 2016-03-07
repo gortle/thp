@@ -294,6 +294,7 @@
     <Content Include="Files\Kingscliff Brochure 2013.pdf" />
     <Content Include="Files\midweek Brochure 2013.pdf" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Images\facebook.png" />
     <Content Include="Images\MichaelBioPic.png" />
     <Content Include="Images\midweek service.jpg" />
     <Content Include="Images\StephenTaylorFamily.png" />
